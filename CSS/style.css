@@ -1,0 +1,246 @@
+.contenedor{
+    width: 70%;
+    margin: auto;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.btn{
+    background-color: rgb(236, 158, 129);
+    border: rgb(255, 64, 0) solid 1px;
+    border-radius: 10px;
+    padding:5px ;
+
+}
+/* header*/
+
+.head-header{
+    
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    background-color: antiquewhite;
+    height: 100px;
+    align-items: center;
+    
+}   
+.inicio-header{
+    display: flex;
+    column-gap: 10px;
+}
+.inicio-header a{
+    text-decoration: none;
+    color: white;
+}
+
+.inicio-header a:hover{
+    opacity: 0.2;
+}
+.idioma-header select{
+    border-radius: 5px;
+    height: 26px;
+}
+
+.titulo-header{
+font-family: 'Nerko One', cursive;
+position: relative;
+animation-name: titulo;
+animation-duration: 3s;
+}
+.titulo-header::after{
+    position: absolute;
+    content: '';
+    background-color: rgb(255, 187, 0);
+    width: 100%;
+    height: 0.1px;
+    
+}
+.titulo-header::before{
+    position: absolute;
+    content: '';
+    background-color: rgb(255, 187, 0);
+    width: 100%;
+    height: 0.1px;
+    
+}
+
+@keyframes titulo{
+
+from {bottom: 200px;}
+to { bottom: 0px;}
+}
+
+/*navegador*/
+nav a{
+    text-decoration: none;
+    color: rgb(185, 93, 51);
+    margin-top: 20px;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+
+/*buscador*/
+.buscador{
+
+    text-align: center;
+    margin-top: 60px;
+    font-size: 20px;
+
+}
+.buscador input{
+    border-radius: 15px;
+    border:1px grey solid;
+    height: 40px;
+    width: 300px;
+    margin-left: 10px;
+}
+
+.buscador button{
+    margin-left: 10px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 14px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: 1px solid rgb(117, 117, 117);
+    text-transform: uppercase;
+}
+.buscador button:hover{
+    opacity: 0.7;
+}
+::placeholder{
+    padding-left: 10px;
+    font-size: 13px;
+}
+
+/*banner1*/
+
+section img{
+    width:35%;
+    border-radius: 10px;
+}
+.banner1{
+    display: flex;
+    background-color: wheat;
+    padding: 20px;
+    margin-top: 20px;
+    column-gap: 50px;
+}
+
+.banner1 p{
+    text-align: justify;
+    line-height: 23px;
+}
+.contenido-banner1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /*De esta manera, puesto en direction:column, puedo separar el contenido de dentro para que quede más bonito visualmente*/
+}
+.contenido-banner1 a{
+    color: cornsilk;
+    text-decoration: none;
+    width: fit-content; /* He utilizado esta etiqueta de casualidad y ha funcionado. El backgroun del botón se expandia y de esta manera, he conseguido que se expanda la misma medida que el contenido de dentr*/
+}
+.contenido-banner1 a:hover{
+    opacity: 0.4;
+}
+/*main*/
+
+.main-curso{
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.opinion{
+    display: flex;
+    justify-content: space-between;
+    max-width: 50%;  
+    column-gap: 30px; 
+}
+
+blockquote {
+    border: 3px rgb(245, 166, 77) solid;
+    height: 212px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 15px;
+}
+.opinion h4{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.main-catalogo{
+   border: 2px solid rgb(245, 166, 77);
+   border-radius: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+   column-gap: 20px; 
+   padding-left: 20px;
+   padding-right: 20px;
+}
+.main-catalogo select{
+   border-radius: 10px; 
+   height: 30px;
+   width: 170px;
+   border-color: rgb(148, 147, 147);
+}
+
+/*footer*/
+
+.navegador-footer{
+    margin-top: 20px;
+    background-color: rgb(240, 224, 155);
+    height: 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+}
+.navegador-footer ul{
+    margin: 0 auto;
+    list-style: none;
+    line-height: 40px;
+}
+
+.navegador-footer a{
+    text-decoration: none;
+    color: black;
+    margin-top: 30px;
+    
+}
+.navegador-footer a:hover{
+    text-decoration: underline;
+    color: rgb(77, 12, 1);
+}
+.titulo-footer{
+
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.parrafo-footer{
+    background-color: rgb(240, 224, 155);
+    display: flex;
+    justify-content: center;
+
+}
+
+
+    
+
+
+
